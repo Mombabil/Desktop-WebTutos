@@ -1,0 +1,194 @@
+.creer-un-projet-symfony-content{
+    width: calc(90% + 1px);
+// architecture du guide
+    .creer-un-projet-symfony-template {
+        max-width: 100%;
+        /* Titres */
+        .title-content{
+            width: 100%;
+            h4{
+                font-weight: 300;
+                font-size: 1.3rem;
+                padding: 0 30px;
+                grid-area: t;
+                overflow: hidden;
+                color: white;
+                &::before{
+                    content: "⌵";
+                    padding-right: 12px;
+                    color: rgb(36, 34, 34);
+                    font-weight: 900;
+                    position: relative;
+                    top: -3px;
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 0.5rem;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin-right: -100%;
+                    margin-left: 8px;
+                    position: relative;
+                    top: 2px;
+                    border-top: 1px solid rgb(148, 137, 137);
+                }
+            }
+        }
+        /* Partie 1 Créer un projet Symfony */
+        .first-part-cupst-content{
+            padding: 12px 64px;
+            div{
+                position: relative;
+                display: inline-block;
+                margin-right: 100px;
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    width: 105px;
+                    height: 1px;
+                    border-top: 1px solid black;
+                }
+                &:nth-child(2){
+                    left: 2px;
+                }
+                &:nth-child(3){
+                    &:after{
+                        border-top: none;
+                    }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.1s all;
+                }
+            }
+        }
+        .second-part-cupst-content{
+            padding: 12px 64px;
+            div{
+                position: relative;
+                display: inline-block;
+                margin-right: 100px;
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    width: 105px;
+                    height: 1px;
+                    border-top: 1px solid black;
+                }
+                &:nth-child(2){
+                    left: 5px;
+                }
+                &:nth-child(5){
+                    right: 5px;
+                    top: 2px;
+                    &:after{
+                        border-top: none;
+                    }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.1s all;
+                }
+            }
+        }
+    }
+    // description du guide
+    .creer-un-projet-symfony-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding-left: 24px;
+        margin: 0 auto;
+        .cupsd-pense-bete{
+            width: 50%;
+            background: rgb(48, 47, 47);
+            margin-bottom: 24px;
+            .cupsd-pense-bete-header{
+                height: 44px;
+                background: rgb(255,207,102);
+                margin-bottom: 20px;
+                border: 1px solid black;
+                .cupsd-header-add{
+                    padding: 8px 8px;
+                    opacity: 0.6;
+                }
+                .cupsd-header-param{
+                    float: right;
+                    letter-spacing: 3px;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    padding-right: 8px;
+                    opacity: 0.7;
+
+                }
+                .cupsd-header-close{
+                    float: right;
+                    padding: 8px 8px;
+                    opacity: 0.7;
+                }
+            }
+            .cupsd-pense-bete-content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0 12px 20px 12px;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                span{
+                    color: whitesmoke;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    line-height: 28px;
+                    code{
+                        background: whitesmoke;
+                        padding: 1px 4px;
+                        border-radius: 2px;
+                        color: black;
+                        font-size: 1.2rem;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: rgb(130, 130, 216);
+                        padding: 0 3px;
+                    }
+                    strong{
+                        color: bisque;
+                    }
+                }
+                img{
+                    padding: 24px 0;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 670px) {
+    .creer-un-projet-symfony-content{
+        .creer-un-projet-symfony-description{
+            .cupsd-pense-bete{
+                width: 75%;
+                .cupsd-pense-bete-content{
+                    font-size: 0.8rem;
+                    span{
+                        code{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

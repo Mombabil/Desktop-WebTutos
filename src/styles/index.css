@@ -1,0 +1,1283 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  position: sticky;
+  height: 100vh;
+}
+
+.root {
+  position: sticky;
+  z-index: -2;
+  height: 100vh;
+}
+
+.close-container {
+  transform: translate(-100%, 50%) scale(0);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.container {
+  background: rgb(122, 121, 121);
+  transition: 0.5s ease-in-out;
+}
+
+.content {
+  display: flex;
+  margin-right: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+.content .main-content {
+  width: calc(90% + 1px);
+  background: rgb(122, 121, 121);
+  /* DOSSIERS FREQUENTS */
+  /* PORTFOLIO */
+  /* LIENS UTILES */
+}
+.content .main-content .title-main-content {
+  width: 100%;
+}
+.content .main-content .title-main-content h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 30px;
+  grid-area: t;
+  overflow: hidden;
+  color: white;
+}
+.content .main-content .title-main-content h4::before {
+  content: "⌵";
+  padding-right: 12px;
+  color: rgb(36, 34, 34);
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+}
+.content .main-content .title-main-content h4::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(148, 137, 137);
+}
+.content .main-content .folder-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.content .main-content .folder-main-content .js-folder, .content .main-content .folder-main-content .react-folder, .content .main-content .folder-main-content .php-folder, .content .main-content .folder-main-content .symfony-folder {
+  padding: 0 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+.content .main-content .folder-main-content .js-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .folder-main-content .react-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .folder-main-content .php-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .folder-main-content .symfony-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .title-portfolio-content {
+  width: 100%;
+  padding-top: 24px;
+}
+.content .main-content .title-portfolio-content h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 30px;
+  grid-area: t;
+  overflow: hidden;
+  color: white;
+}
+.content .main-content .title-portfolio-content h4::before {
+  content: "⌵";
+  padding-right: 12px;
+  color: rgb(36, 34, 34);
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+}
+.content .main-content .title-portfolio-content h4::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(148, 137, 137);
+}
+.content .main-content .folder-portfolio-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.content .main-content .folder-portfolio-content .perso-folder, .content .main-content .folder-portfolio-content .from-scratch-folder, .content .main-content .folder-portfolio-content .front-end-mentor-folder {
+  padding: 0 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+.content .main-content .folder-portfolio-content .perso-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .folder-portfolio-content .from-scratch-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .folder-portfolio-content .front-end-mentor-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.content .main-content .title-links-content {
+  width: 100%;
+  padding-top: 24px;
+}
+.content .main-content .title-links-content h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 30px;
+  grid-area: t;
+  overflow: hidden;
+  color: white;
+}
+.content .main-content .title-links-content h4::before {
+  content: "⌵";
+  padding-right: 12px;
+  color: rgb(36, 34, 34);
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+}
+.content .main-content .title-links-content h4::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(148, 137, 137);
+}
+.content .main-content .list-links-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  color: white;
+  flex-wrap: wrap;
+}
+.content .main-content .list-links-content .css-links-content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8px;
+  border-right: 1px solid rgb(148, 137, 137);
+}
+.content .main-content .list-links-content .css-links-content:last-child {
+  border-right: none;
+}
+.content .main-content .list-links-content .css-links-content h5 {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.content .main-content .list-links-content .css-links-content h5 img {
+  position: relative;
+  top: 4px;
+  padding-right: 4px;
+}
+.content .main-content .list-links-content .css-links-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px;
+}
+
+@media screen and (max-width: 782px) {
+  .content .main-content .folder-main-content {
+    justify-content: space-around;
+  }
+  .content .main-content .folder-portfolio-content {
+    justify-content: space-around;
+  }
+}
+.symfony-content {
+  padding: 24px 0;
+  display: flex;
+  width: calc(90% + 1px);
+  align-items: flex-start;
+}
+.symfony-content .symfony-folder {
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+.symfony-content .symfony-folder:hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  background: rgb(122, 121, 121);
+}
+
+.bodyHeader {
+  color: white;
+}
+.bodyHeader .explorateur {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  background-color: black;
+}
+.bodyHeader .explorateur .leftSide {
+  display: flex;
+  padding-left: 18px;
+}
+.bodyHeader .explorateur .leftSide span img {
+  width: 24px;
+  padding-right: 8px;
+}
+.bodyHeader .explorateur .leftSide span img:first-child {
+  width: 20px;
+}
+.bodyHeader .explorateur .leftSide h4 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 200;
+  cursor: default;
+}
+.bodyHeader .explorateur .leftSide h4::before {
+  content: "";
+  border: 1px solid white;
+  padding-right: 1px;
+  margin-right: 8px;
+}
+.bodyHeader .explorateur .rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.bodyHeader .explorateur .rightSide span {
+  width: 48px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bodyHeader .explorateur .rightSide span img {
+  width: 24px;
+  margin-left: 12px;
+}
+.bodyHeader .explorateur .rightSide span:nth-child(2) img {
+  width: 20px;
+  margin-left: 14px;
+}
+.bodyHeader .explorateur .rightSide span:hover {
+  background: rgb(48, 47, 47);
+}
+.bodyHeader .explorateur .rightSide span:nth-child(3):hover {
+  background: red;
+}
+.bodyHeader .path {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  background-color: black;
+  justify-content: flex-start;
+}
+.bodyHeader .path div {
+  width: 96px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+.bodyHeader .path div:first-child {
+  background: rgb(26, 109, 216);
+}
+.bodyHeader .path div:first-child:hover {
+  background: rgb(26, 109, 216);
+}
+.bodyHeader .path div .nav-active {
+  background: rgb(48, 47, 47);
+}
+.bodyHeader .path div a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bodyHeader .arianne {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(48, 47, 47);
+}
+.bodyHeader .arianne .arrows {
+  width: 10%;
+}
+.bodyHeader .arianne .arrows span {
+  padding-left: 18px;
+}
+.bodyHeader .arianne .arrows span img {
+  width: 24px;
+}
+.bodyHeader .arianne .breadcrumb {
+  width: 75%;
+  height: 66%;
+  border: 1px solid rgb(153, 148, 148);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.bodyHeader .arianne .breadcrumb span {
+  padding-left: 18px;
+}
+.bodyHeader .arianne .breadcrumb span::before {
+  content: "📂";
+  padding-right: 8px;
+  font-size: 1.1rem;
+}
+.bodyHeader .arianne .search {
+  width: 15%;
+  height: 66%;
+  margin-right: 8px;
+  border: 1px solid rgb(153, 148, 148);
+  display: flex;
+  align-items: center;
+}
+.bodyHeader .arianne .search span {
+  padding-left: 12px;
+  color: grey;
+  font-size: 0.9rem;
+}
+.bodyHeader .arianne .search span::before {
+  content: "🔍";
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 1580px) {
+  .bodyHeader .arianne .search span {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1415px) {
+  .bodyHeader .arianne .search span {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .bodyHeader .arianne .search span {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .bodyHeader .arianne {
+    justify-content: flex-start;
+  }
+  .bodyHeader .arianne .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 405px) {
+  .bodyHeader .explorateur .leftSide h4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 910px) {
+  .bodyHeader .arianne {
+    overflow: hidden;
+    padding-left: 10%;
+    width: 90%;
+  }
+  .bodyHeader .arianne .arrows {
+    display: none;
+  }
+}
+.navigation {
+  width: calc(10% - 1px);
+  min-height: calc(100vh - 130px);
+  color: white;
+  background: rgb(48, 47, 47);
+  display: flex;
+  flex-direction: column;
+}
+.navigation .home, .navigation .langage, .navigation .portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 0 0;
+}
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 0 8px 24px;
+}
+.navigation a:hover {
+  background: rgb(122, 121, 121);
+}
+.navigation a img {
+  padding-right: 8px;
+  position: relative;
+}
+.navigation a:first-child img {
+  top: 2px;
+}
+.navigation a:nth-child(2) img {
+  top: 5px;
+}
+.navigation a:nth-child(3) img {
+  top: 5px;
+}
+.navigation a:nth-child(4) img {
+  top: 4px;
+}
+.navigation .active {
+  background: rgb(122, 121, 121);
+}
+
+@media screen and (max-width: 1330px) {
+  .navigation a .nav-describ {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .navigation a .nav-describ {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .navigation a .nav-describ {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navigation a {
+    padding: 4px 0 8px 0px;
+    text-align: center;
+  }
+  .navigation a .nav-describ {
+    display: none;
+  }
+}
+.desktop-container {
+  position: absolute;
+  z-index: -1;
+  background: url("../../../public/images/wallpaper.png") center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "l . . p p" ". . . p p" "c c c . ." "c c c . .";
+  gap: 10px;
+}
+.desktop-container div:nth-child(1) {
+  grid-area: p;
+  color: rgb(153, 133, 134);
+  padding-top: 24px;
+  padding-right: 24px;
+  text-align: right;
+}
+.desktop-container div:nth-child(1) img {
+  max-width: 200px;
+  border: 2px solid rgb(153, 133, 134);
+  border-radius: 4px;
+}
+.desktop-container div:nth-child(2) {
+  grid-area: l;
+  text-align: center;
+  padding-top: 32px;
+  padding-left: none;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+}
+.desktop-container div:nth-child(2) img {
+  margin: 0 auto;
+}
+.desktop-container div:nth-child(2) h6 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 auto;
+  color: white;
+}
+.desktop-container div:nth-child(2):hover {
+  transform: translate(4px, 4px) scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.desktop-container div:nth-child(3) {
+  grid-area: c;
+  border: 2px solid rgb(153, 133, 134);
+  margin: 24px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: rgb(153, 133, 134);
+}
+.desktop-container div:nth-child(3) h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.desktop-container div:nth-child(3) .langages {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+.desktop-container div:nth-child(3) .front, .desktop-container div:nth-child(3) .back {
+  padding: 0;
+  font-size: 1rem;
+}
+.desktop-container div:nth-child(3) .front h3, .desktop-container div:nth-child(3) .back h3 {
+  font-weight: 400;
+  text-shadow: 1px 1px 1px black;
+}
+.desktop-container div:nth-child(3) .front ul, .desktop-container div:nth-child(3) .back ul {
+  list-style: none;
+  text-align: left;
+  font-weight: 500;
+}
+.desktop-container div:nth-child(3) .front ul li, .desktop-container div:nth-child(3) .back ul li {
+  padding: 4px 0;
+}
+
+@media screen and (max-width: 580px) {
+  .desktop-container div:nth-child(1) img {
+    max-width: 150px;
+    margin-bottom: 112px;
+  }
+  .desktop-container div:nth-child(1) h1, .desktop-container div:nth-child(1) h2, .desktop-container div:nth-child(1) h3 {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px black;
+  }
+  .desktop-container div:nth-child(2) {
+    grid-area: l;
+    text-align: center;
+    padding-top: 32px;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+  .desktop-container div:nth-child(2) img {
+    margin: 0 auto;
+  }
+  .desktop-container div:nth-child(2) h6 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 auto;
+    color: rgb(153, 133, 134);
+  }
+  .desktop-container div:nth-child(2):hover {
+    transform: translate(4px, 4px) scale(1.05);
+    transition: 0.2s ease-in-out;
+  }
+}
+@media screen and (max-width: 790px) {
+  .desktop-container div:nth-child(1) img {
+    margin-bottom: 96px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .desktop-container div:nth-child(1) img {
+    max-width: 100px;
+    margin-bottom: 164px;
+  }
+  .desktop-container div:nth-child(1) h1, .desktop-container div:nth-child(1) h2, .desktop-container div:nth-child(1) h3 {
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .desktop-container div:nth-child(3) .front h3, .desktop-container div:nth-child(3) .back h3 {
+    font-size: 1rem;
+  }
+  .desktop-container div:nth-child(3) .front ul, .desktop-container div:nth-child(3) .back ul {
+    font-size: 0.9rem;
+  }
+  .desktop-container div:nth-child(3) .front ul li, .desktop-container div:nth-child(3) .back ul li {
+    padding: 4px 0;
+  }
+}
+@media screen and (max-width: 970px) {
+  .desktop-container div:nth-child(3) .front h3, .desktop-container div:nth-child(3) .back h3 {
+    font-size: 0.9rem;
+  }
+  .desktop-container div:nth-child(3) .front ul, .desktop-container div:nth-child(3) .back ul {
+    font-size: 0.8rem;
+  }
+  .desktop-container div:nth-child(3) .front ul li, .desktop-container div:nth-child(3) .back ul li {
+    padding: 4px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .desktop-container div:nth-child(3) .front h3, .desktop-container div:nth-child(3) .back h3 {
+    font-size: 0.8rem;
+  }
+  .desktop-container div:nth-child(3) .front ul, .desktop-container div:nth-child(3) .back ul {
+    font-size: 0.8rem;
+  }
+  .desktop-container div:nth-child(3) .front ul li, .desktop-container div:nth-child(3) .back ul li {
+    padding: 4px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .desktop-container div:nth-child(3) {
+    display: none;
+  }
+}
+.creer-un-projet-symfony-content {
+  width: calc(90% + 1px);
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template {
+  max-width: 100%;
+  /* Titres */
+  /* Partie 1 Créer un projet Symfony */
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .title-content {
+  width: 100%;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .title-content h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 30px;
+  grid-area: t;
+  overflow: hidden;
+  color: white;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .title-content h4::before {
+  content: "⌵";
+  padding-right: 12px;
+  color: rgb(36, 34, 34);
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .title-content h4::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(148, 137, 137);
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .first-part-cupst-content {
+  padding: 12px 64px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .first-part-cupst-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .first-part-cupst-content div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 105px;
+  height: 1px;
+  border-top: 1px solid black;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .first-part-cupst-content div:nth-child(2) {
+  left: 2px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .first-part-cupst-content div:nth-child(3):after {
+  border-top: none;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .first-part-cupst-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content {
+  padding: 12px 64px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 105px;
+  height: 1px;
+  border-top: 1px solid black;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content div:nth-child(2) {
+  left: 5px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content div:nth-child(5) {
+  right: 5px;
+  top: 2px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content div:nth-child(5):after {
+  border-top: none;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-template .second-part-cupst-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 24px;
+  margin: 0 auto;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete {
+  width: 50%;
+  background: rgb(48, 47, 47);
+  margin-bottom: 24px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-header {
+  height: 44px;
+  background: rgb(255, 207, 102);
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-header .cupsd-header-add {
+  padding: 8px 8px;
+  opacity: 0.6;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-header .cupsd-header-param {
+  float: right;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-right: 8px;
+  opacity: 0.7;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-header .cupsd-header-close {
+  float: right;
+  padding: 8px 8px;
+  opacity: 0.7;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 12px 20px 12px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content span {
+  color: whitesmoke;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content span code {
+  background: whitesmoke;
+  padding: 1px 4px;
+  border-radius: 2px;
+  color: black;
+  font-size: 1.2rem;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content span a {
+  text-decoration: none;
+  color: rgb(130, 130, 216);
+  padding: 0 3px;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content span strong {
+  color: bisque;
+}
+.creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content img {
+  padding: 24px 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 670px) {
+  .creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete {
+    width: 75%;
+  }
+  .creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content {
+    font-size: 0.8rem;
+  }
+  .creer-un-projet-symfony-content .creer-un-projet-symfony-description .cupsd-pense-bete .cupsd-pense-bete-content span code {
+    font-size: 0.8rem;
+  }
+}
+.les-bases-de-symfony-content {
+  width: calc(90% + 1px);
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template {
+  max-width: 100%;
+  /* Titres */
+  /* Partie 1 les bases de Symfony */
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .title-content {
+  width: 100%;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .title-content h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 30px;
+  grid-area: t;
+  overflow: hidden;
+  color: white;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .title-content h4::before {
+  content: "⌵";
+  padding-right: 12px;
+  color: rgb(36, 34, 34);
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .title-content h4::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(148, 137, 137);
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .first-part-lbdst-content {
+  padding: 12px 64px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .first-part-lbdst-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .first-part-lbdst-content div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 105px;
+  height: 1px;
+  border-top: 1px solid black;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .first-part-lbdst-content div:nth-child(2) {
+  left: 2px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .first-part-lbdst-content div:nth-child(2):after {
+  border-top: none;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .first-part-lbdst-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .second-part-lbdst-content {
+  padding: 12px 64px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .second-part-lbdst-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .second-part-lbdst-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content {
+  padding: 12px 64px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 105px;
+  height: 1px;
+  border-top: 1px solid black;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content div:nth-child(3) {
+  top: -12px;
+  left: 2px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content div:nth-child(3):hover {
+  left: 3px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content div:nth-child(3):after {
+  border-top: none;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .third-part-lbdst-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .fourth-part-lbdst-content {
+  padding: 12px 64px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .fourth-part-lbdst-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-template .fourth-part-lbdst-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 24px;
+  margin: 0 auto;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete {
+  width: 50%;
+  background: rgb(48, 47, 47);
+  margin-bottom: 24px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-header {
+  height: 44px;
+  background: rgb(255, 207, 102);
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-header .lbdsd-header-add {
+  padding: 8px 8px;
+  opacity: 0.6;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-header .lbdsd-header-param {
+  float: right;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-right: 8px;
+  opacity: 0.7;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-header .lbdsd-header-close {
+  float: right;
+  padding: 8px 8px;
+  opacity: 0.7;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 12px 20px 12px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content span {
+  color: whitesmoke;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content span code {
+  background: whitesmoke;
+  padding: 1px 4px;
+  border-radius: 2px;
+  color: black;
+  font-size: 1.2rem;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content span a {
+  text-decoration: none;
+  color: rgb(130, 130, 216);
+  padding: 0 3px;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content span strong {
+  color: bisque;
+}
+.les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content img {
+  padding: 24px 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 670px) {
+  .les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete {
+    width: 75%;
+  }
+  .les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content {
+    font-size: 0.8rem;
+  }
+  .les-bases-de-symfony-content .les-bases-de-symfony-description .lbdsd-pense-bete .lbdsd-pense-bete-content span code {
+    font-size: 0.8rem;
+  }
+}
+.le-routing-content {
+  width: calc(90% + 1px);
+}
+.le-routing-content .le-routing-template {
+  max-width: 100%;
+  /* Titres */
+  /* Partie 1 les bases de Symfony */
+}
+.le-routing-content .le-routing-template .title-content {
+  width: 100%;
+}
+.le-routing-content .le-routing-template .title-content h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 30px;
+  grid-area: t;
+  overflow: hidden;
+  color: white;
+}
+.le-routing-content .le-routing-template .title-content h4::before {
+  content: "⌵";
+  padding-right: 12px;
+  color: rgb(36, 34, 34);
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+}
+.le-routing-content .le-routing-template .title-content h4::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(148, 137, 137);
+}
+.le-routing-content .le-routing-template .first-part-lrt-content {
+  padding: 12px 64px;
+}
+.le-routing-content .le-routing-template .first-part-lrt-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.le-routing-content .le-routing-template .first-part-lrt-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.le-routing-content .le-routing-template .second-part-lrt-content {
+  padding: 12px 64px;
+}
+.le-routing-content .le-routing-template .second-part-lrt-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.le-routing-content .le-routing-template .second-part-lrt-content div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 105px;
+  height: 1px;
+  border-top: 1px solid black;
+}
+.le-routing-content .le-routing-template .second-part-lrt-content div:nth-child(2):after {
+  border-top: none;
+}
+.le-routing-content .le-routing-template .second-part-lrt-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content {
+  padding: 12px 64px;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 105px;
+  height: 1px;
+  border-top: 1px solid black;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content div:nth-child(3) {
+  top: -12px;
+  left: 2px;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content div:nth-child(3):hover {
+  left: 3px;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content div:nth-child(3):after {
+  border-top: none;
+}
+.le-routing-content .le-routing-template .third-part-lrt-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.le-routing-content .le-routing-template .fourth-part-lrt-content {
+  padding: 12px 64px;
+}
+.le-routing-content .le-routing-template .fourth-part-lrt-content div {
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.le-routing-content .le-routing-template .fourth-part-lrt-content div:hover {
+  transform: scale(1.1);
+  transition: 0.1s all;
+}
+.le-routing-content .le-routing-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 24px;
+  margin: 0 auto;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete {
+  width: 50%;
+  background: rgb(48, 47, 47);
+  margin-bottom: 24px;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-header {
+  height: 44px;
+  background: rgb(255, 207, 102);
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-header .lrd-header-add {
+  padding: 8px 8px;
+  opacity: 0.6;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-header .lrd-header-param {
+  float: right;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-right: 8px;
+  opacity: 0.7;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-header .lrd-header-close {
+  float: right;
+  padding: 8px 8px;
+  opacity: 0.7;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 12px 20px 12px;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content span {
+  color: whitesmoke;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content span code {
+  background: whitesmoke;
+  padding: 1px 4px;
+  border-radius: 2px;
+  color: black;
+  font-size: 1.2rem;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content span a {
+  text-decoration: none;
+  color: rgb(130, 130, 216);
+  padding: 0 3px;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content span strong {
+  color: bisque;
+}
+.le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content img {
+  padding: 24px 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 670px) {
+  .le-routing-content .le-routing-description .lrd-pense-bete {
+    width: 75%;
+  }
+  .le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content {
+    font-size: 0.8rem;
+  }
+  .le-routing-content .le-routing-description .lrd-pense-bete .lrd-pense-bete-content span code {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,79 @@
+.navigation{
+    width: calc(10% - 1px);
+    min-height: calc(100vh - 130px);
+    color: white;
+    background: rgb(48, 47, 47);
+    display: flex;
+    flex-direction: column;
+    .home, .langage, .portfolio{
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0 0 0;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 4px 0 8px 24px;
+        &:hover{
+            background: rgb(122, 121, 121);
+        }
+        img{
+            padding-right: 8px;
+            position: relative;
+        }
+        &:first-child img{
+            top: 2px;
+        }
+        &:nth-child(2) img{
+            top: 5px;
+        }
+        &:nth-child(3) img{
+            top: 5px;
+        }
+        &:nth-child(4) img{
+            top: 4px;
+        }
+    }
+    .active{
+        background: rgb(122, 121, 121);
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .navigation{
+        a{
+            .nav-describ{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1170px){
+    .navigation{
+        a{
+            .nav-describ{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1080px){
+    .navigation{
+        a{
+            .nav-describ{
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .navigation{
+        a{
+            padding: 4px 0 8px 0px;
+            text-align: center;
+            .nav-describ{
+                display: none;
+            }
+        }
+    }
+}

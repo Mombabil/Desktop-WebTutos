@@ -1,0 +1,226 @@
+.close-container{
+    transform: translate(-100%, 50%) scale(0);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.container{
+    background: rgb(122, 121, 121);
+    transition: 0.5s ease-in-out;
+}
+.content{
+    display: flex;
+    margin-right: 8px;
+    overflow: hidden;
+    width: 100%;
+    .main-content{
+        width: calc(90% + 1px);
+        background: rgb(122, 121, 121);
+
+        /* DOSSIERS FREQUENTS */
+        .title-main-content{
+            width: 100%;
+            h4{
+                font-weight: 300;
+                font-size: 1.3rem;
+                padding: 0 30px;
+                grid-area: t;
+                overflow: hidden;
+                color: white;
+                &::before{
+                    content: "⌵";
+                    padding-right: 12px;
+                    color: rgb(36, 34, 34);
+                    font-weight: 900;
+                    position: relative;
+                    top: -3px;
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 0.5rem;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin-right: -100%;
+                    margin-left: 8px;
+                    position: relative;
+                    top: 2px;
+                    border-top: 1px solid rgb(148, 137, 137);
+                }
+            }
+        }
+        .folder-main-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .js-folder, .react-folder, .php-folder, .symfony-folder{
+                padding: 0 32px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                color: rgb(255, 255, 255);
+                font-weight: 700;
+                text-decoration: none;
+                width: 100px;
+                text-align: center;
+            }
+            .js-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+            .react-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+            .php-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+            .symfony-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+        }
+
+        /* PORTFOLIO */
+        .title-portfolio-content{
+            width: 100%;
+            padding-top: 24px;
+            h4{
+                font-weight: 300;
+                font-size: 1.3rem;
+                padding: 0 30px;
+                grid-area: t;
+                overflow: hidden;
+                color: white;
+                &::before{
+                    content: "⌵";
+                    padding-right: 12px;
+                    color: rgb(36, 34, 34);
+                    font-weight: 900;
+                    position: relative;
+                    top: -3px;
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 0.5rem;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin-right: -100%;
+                    margin-left: 8px;
+                    position: relative;
+                    top: 2px;
+                    border-top: 1px solid rgb(148, 137, 137);
+                }
+            }
+        }
+        .folder-portfolio-content{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .perso-folder, .from-scratch-folder, .front-end-mentor-folder{
+                padding: 0 32px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                color: rgb(255, 255, 255);
+                font-weight: 700;
+                text-decoration: none;
+                width: 100px;
+                text-align: center;
+            }
+            .perso-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+            .from-scratch-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+            .front-end-mentor-folder:hover{
+                transform: translate(4px, 4px) scale(1.05);
+                transition: 0.2s ease-in-out;
+            }
+        }
+
+        /* LIENS UTILES */
+        .title-links-content{
+            width: 100%;
+            padding-top: 24px;
+            h4{
+                font-weight: 300;
+                font-size: 1.3rem;
+                padding: 0 30px;
+                grid-area: t;
+                overflow: hidden;
+                color: white;
+                &::before{
+                    content: "⌵";
+                    padding-right: 12px;
+                    color: rgb(36, 34, 34);
+                    font-weight: 900;
+                    position: relative;
+                    top: -3px;
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 0.5rem;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin-right: -100%;
+                    margin-left: 8px;
+                    position: relative;
+                    top: 2px;
+                    border-top: 1px solid rgb(148, 137, 137);
+                }
+            }
+        }
+        .list-links-content{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 12px;
+            color: white;
+            flex-wrap: wrap;
+            .css-links-content{
+                display: flex;
+                flex-direction: column;
+                padding-right: 8px;
+                border-right: 1px solid rgb(148, 137, 137);
+                &:last-child{
+                    border-right: none
+                }
+                h5{
+                    img{
+                        position: relative;
+                        top: 4px;
+                        padding-right: 4px;
+                    }
+                    font-size: 1.05rem;
+                    font-weight: 500;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.7rem;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .content{
+        .main-content{
+            .folder-main-content{
+                justify-content: space-around;
+            }
+            .folder-portfolio-content{
+                justify-content: space-around;
+            }
+        }
+    }    
+}
